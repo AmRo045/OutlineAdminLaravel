@@ -1,4 +1,3 @@
-
 const copyToClipboardExec = (value) => {
     const textArea = document.createElement("textarea");
     textArea.value = value;
@@ -13,13 +12,16 @@ const copyToClipboardExec = (value) => {
 };
 
 window.copyToClipboard = async (value, message = 'Copied') => {
-    try {
-        if (navigator?.clipboard?.writeText) {
+    if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+        try {
             await navigator.clipboard.writeText(value);
+            alert(message);
+        } catch (err) {
+            copyToClipboardExec(value);
+            alert(message);
         }
-    } catch (_) {
+    } else {
         copyToClipboardExec(value);
-    } finally {
         alert(message);
     }
 };
