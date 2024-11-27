@@ -79,9 +79,3 @@ If you find this project useful and would like to support its development, you c
 ```
 UQByW0gL9r89D4oFagC3ZRCEctIoh6XjHu7zv5xU2wcPVATT
 ```
-
-### IRR
-
-<a href="http://www.coffeete.ir/AmRo045">
-   <img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:260px;" />
-</a>
